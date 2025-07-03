@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVIP登录 | CodeMaster</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>SVIP专属登录</h2>
+        
+        <div class="input-group">
+            <span class="input-icon">👑</span>
+            <input type="text" id="svipId" placeholder="SVIP账号" required>
+        </div>
+        
+        <div class="input-group">
+            <span class="input-icon">🔒</span>
+            <input type="password" id="svipPassword" placeholder="SVIP密码" required>
+        </div>
+        
+        <button class="login-button" id="svipLoginBtn">SVIP登录</button>
+        
+        <div class="switch-link">
+            <p>返回 <a href="login.html">普通登录</a></p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('svipLoginBtn').addEventListener('click', function() {
+            // SVIP登录逻辑
+            alert('SVIP登录功能正在开发中');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顷言智创 | 学习专区</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- 悬浮窗 -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3>欢迎使用 | 顷言智创</h3>
+            </div>
+            <div class="popup-content">
+                <p>现在开始免费注册[SVIP]用户，点击确定进入QQ群申请资格，点击取消可以关闭悬浮窗，参观本站点的雏形</p>
+            </div>
+            <div class="popup-buttons">
+                <button id="popup-confirm" class="popup-button confirm">确定</button>
+                <button id="popup-cancel" class="popup-button cancel">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 玻璃拟态导航 -->
+    <header>
+        <div class="logo">顷言智创</div>
+        <nav>
+            <a href="login.html" style="color: var(--text); text-decoration: none; font-weight: 500;">登录</a>
+        </nav>
+    </header>
+    
+    <!-- 主内容区 -->
+    <main>
+        <div class="hero">
+            <h1>掌握语法<br>从今天开始</h1>
+            <p class="subtitle">通过交互式学习Python-Web3等前沿技术，加入开发者社区</p>
+            
+            <button class="cta-button" onclick="window.location.href='login.html'">
+                开始学习旅程
+            </button>
+            
+            <div class="card-grid">
+                <div class="feature-card floating" style="animation-delay: 0s;">
+                    <div class="card-icon">⌨️</div>
+                    <h3>实时视频查看</h3>
+                    <p>直接在浏览器中查看教程视频，无需跑遍全网</p>
+                </div>
+                <div class="feature-card floating" style="animation-delay: 1s;">
+                    <div class="card-icon">🧠</div>
+                    <h3>Kimi辅助学习</h3>
+                    <p>智能错误诊断和个性化学习路径推荐</p>
+                </div>
+                <div class="feature-card floating" style="animation-delay: 2s;">
+                    <div class="card-icon">🌐</div>
+                    <h3>顷言社区</h3>
+                    <p>与来自150+开发者共同创建</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 | CodeMaster</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>创建账户</h2>
+        
+        <form id="registerForm">
+            <div class="input-group">
+                <span class="input-icon">👤</span>
+                <input type="text" id="username" placeholder="用户名" required minlength="3">
+                <div class="error-message" id="username-error">用户名至少需要3位字符</div>
+            </div>
+            
+            <div class="input-group">
+                <span class="input-icon">✉️</span>
+                <input type="email" id="email" placeholder="电子邮箱" required>
+                <div class="error-message" id="email-error">请输入有效的邮箱地址</div>
+            </div>
+            
+            <div class="input-group">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="password" placeholder="密码" required minlength="6">
+                <div class="error-message" id="password-error">密码至少需要6位字符</div>
+            </div>
+            
+            <div class="input-group">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="confirmPassword" placeholder="确认密码" required>
+                <div class="error-message" id="confirm-error">两次输入的密码不一致</div>
+            </div>
+            
+            <div class="agreement-group">
+                <input type="checkbox" id="userAgreement" class="custom-checkbox" required>
+                <label for="userAgreement" class="agreement-text">
+                    我已阅读并同意
+                    <a href="xieyi.html?type=terms" class="agreement-link" id="termsLink">《用户服务协议》</a>
+                    和
+                    <a href="xieyi.html?type=privacy" class="agreement-link" id="privacyLink">《隐私政策》</a>
+                </label>
+            </div>
+            
+            <button type="submit" class="register-button" id="submitBtn" disabled>注册</button>
+        </form>
+        
+        <div class="social-login">
+            <button class="social-btn">🤲</button>
+            <button class="social-btn">👂</button>
+            <button class="social-btn">💅</button>
+        </div>
+        
+        <div class="switch-link">
+            <p>已有账户？ <a href="login.html" id="loginLink">登录</a></p>
+        </div>
+    </div>
+    
+    <script src="register.js"></script>
+</body>
+</html>

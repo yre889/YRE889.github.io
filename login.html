@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 | CodeMaster</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>欢迎回来</h2>
+        
+        <!-- 折叠窗容器 -->
+        <div class="accordion-container">
+            <!-- SVIP登录 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>SVIP专属登录</span>
+                    <span class="accordion-arrow">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>使用SVIP账号快速登录</p>
+                    <button class="accordion-btn" onclick="window.location.href='SVIP.html'">立即登录</button>
+                </div>
+            </div>
+            
+            <!-- 快手认证登录 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>快手认证登录</span>
+                    <span class="accordion-arrow">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>使用快手账号快速登录</p>
+                    <button class="accordion-btn" onclick="window.location.href='kuaishou.html'">立即登录</button>
+                </div>
+            </div>
+            
+            <!-- 其他认证登录 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>其他认证登录</span>
+                    <span class="accordion-arrow">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>使用其他平台账号登录</p>
+                    <button class="accordion-btn" onclick="window.location.href='qita.html'">立即登录</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider">
+            <span>或</span>
+        </div>
+        
+        <!-- 原有邮箱登录表单 -->
+        <form id="loginForm">
+            <div class="input-group">
+                <span class="input-icon">✉️</span>
+                <input type="email" id="email" placeholder="电子邮箱/手机号" required>
+                <div class="error-message" id="email-error">请输入有效的邮箱地址或手机号</div>
+            </div>
+            
+            <div class="input-group">
+                <span class="input-icon">🔒</span>
+                <input type="password" id="password" placeholder="密码" required minlength="6">
+                <div class="error-message" id="password-error">密码至少需要6位字符</div>
+            </div>
+            
+            <div class="agreement-group">
+                <input type="checkbox" id="userAgreement" class="custom-checkbox" required>
+                <label for="userAgreement" class="agreement-text">
+                    我已阅读并同意
+                    <a href="xieyi.html?type=terms" class="agreement-link" id="termsLink">《用户服务协议》</a>
+                    和
+                    <a href="xieyi.html?type=privacy" class="agreement-link" id="privacyLink">《隐私政策》</a>
+                </label>
+            </div>
+            
+            <button type="submit" class="login-button" id="submitBtn" disabled>登录</button>
+        </form>
+        
+        <div class="switch-link">
+            <p>新用户？ <a href="register.html" id="registerLink">创建账户</a></p>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
